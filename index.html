@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="svg-pan-zoom.js"></script>
+<script type="text/javascript">
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "karte.svg", true);
+    ajax.send();
+    ajax.onload = function(e) {
+      var div = document.createElement("div-map");
+      div.innerHTML = ajax.responseText;
+	  document.body.insertBefore(div, document.getElementById("end"));
+    }
+	
+	function change1()
+    {
+		$('.repower').css({ fill: "#ff0000" });
+    }
+	  
+	function change2()
+    {
+	    $('#GR-Poschiavo').css({ fill: "#00ff00" });		
+	}
+	
+	function resetmap()
+    {
+		$('.repower').css({ fill: "#F69788" });
+	    $('#GR-Poschiavo').css({ fill: "#F69788" });		
+	}	
+	
+	function switchch()
+	{
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "karte2.svg", true);
+		ajax.send();
+		ajax.onload = function(e) {
+		  var div = document.createElement("div-map");
+		  div.innerHTML = ajax.responseText;
+		  $('div-map').html(div);
+		}
+	}
+	function zoomgr()
+	{
+	  panZoomInstance = svgPanZoom('#mapch', {
+		zoomEnabled: true,
+		controlIconsEnabled: true,
+		fit: true,
+		center: true,
+		minZoom: 0.1
+	  });
+    panZoomInstance.zoom(2.5);
+	panZoomInstance.pan({x:-5500,y:-2500});
+
+	}
+</script>
+<head>
+<meta charset="utf-8">
+<title>Test Map</title>
+</head>
+
+<body>
+<div>
+<button onClick="change1()">Click me red</button> <br>
+<button onClick="change2()">Click me green</button> <br>
+<button onClick="resetmap()">Reset map</button> <br>
+<button onClick="switchch()">Change map CH lean</button> <br>
+<button onClick="zoomgr()">Zoom GR</button> <br>
+<br>
+</div>
+<div id="end"></div>
+</body>
+</html>
