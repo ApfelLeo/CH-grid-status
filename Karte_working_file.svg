@@ -64,6 +64,16 @@
 	.st19{clip-path:url(#SVGID_2_);}
 	.st24{letter-spacing:-1;}
 	.st25{clip-path:url(#SVGID_2_);fill:none;stroke:#A7A9AC;stroke-width:2.101;}
+
+	#Markerfarben#
+	.rot1{fill:#DD2726;}
+	.tropfen1{fill:url(#SVGID_3_);}
+	.tropfen2{fill:#FCD602;}
+	.tropfen3blau{fill:#00A1DF;}
+	.abc{fill:#A7A9AC;}
+	.crosshair1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.crosshair2{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+
 ]]>
 </style>
 <g id="_x35_">
@@ -10607,7 +10617,7 @@
 	</g>
 	<g id="Massstab">
 		<defs>
-			<rect id="SVGID_1_" x="-0.004" y="-0.003" width="3911.814" height="2605.463"/>
+			<rect id="SVGID_1_" x="0" y="0" width="3911.814" height="2605.463"/>
 		</defs>
 		<clipPath id="SVGID_2_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
@@ -15793,6 +15803,39 @@
 		<line class="st55" x1="2589.016" y1="2187.647" x2="2584.756" y2="2194.248"/>
 		<line class="st55" x1="2585.066" y1="2094.715" x2="2659.07" y2="2041.961"/>
 		<line class="st55" x1="2354.838" y1="204.417" x2="2366.228" y2="217.18"/>
+	</g>
+</g>
+<g id="Marker">
+	<g id="TropfenMarker">
+		<g>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="631.0415" y1="2373.7773" x2="631.0415" y2="2313.7021">
+				<stop  offset="0.1043" style="stop-color:#D82027"/>
+				<stop  offset="0.1534" style="stop-color:#FFDA00"/>
+				<stop  offset="0.3436" style="stop-color:#FFDA00"/>
+				<stop  offset="0.397" style="stop-color:#C2CA30"/>
+				<stop  offset="0.4465" style="stop-color:#89BD40"/>
+				<stop  offset="0.4883" style="stop-color:#56B447"/>
+				<stop  offset="0.5207" style="stop-color:#17B04B"/>
+				<stop  offset="0.5399" style="stop-color:#00AF4D"/>
+			</linearGradient>
+			<path class="tropfen1" d="M630.552,2371.633c-2.218-10.695-6.783-19.207-10.451-26.046c-3.252-6.065-5.821-10.855-5.821-15.123
+				c0-9.242,7.519-16.762,16.762-16.762c9.242,0,16.761,7.52,16.761,16.762c0,4.497-2.7,9.742-6.118,16.384
+				c-3.432,6.669-7.704,14.969-10.158,24.805l-0.53,2.125L630.552,2371.633z"/>
+			<path class="tropfen2" d="M631.042,2314.202c8.98,0,16.261,7.28,16.261,16.262c0,8.98-11.448,21.773-16.261,41.067
+				c-4.145-19.982-16.262-32.087-16.262-41.067C614.78,2321.482,622.061,2314.202,631.042,2314.202 M631.042,2313.202
+				c-9.518,0-17.262,7.743-17.262,17.262c0,4.394,2.595,9.232,5.881,15.358c3.652,6.812,8.198,15.288,10.402,25.912l0.889,4.288
+				l1.06-4.249c2.44-9.78,6.697-18.051,10.118-24.697c3.449-6.701,6.173-11.994,6.173-16.612
+				C648.303,2320.945,640.56,2313.202,631.042,2313.202L631.042,2313.202z"/>
+		</g>
+		<circle class="tropfen3blau" cx="631.042" cy="2330.464" r="16.261"/>
+	</g>
+	<circle id="RoterKreis" class="rot1" cx="63.334" cy="54.794" r="11"/>
+	<g id="KreuzMarker">
+		<path class="rot1" d="M97.445,80.68c-3.313,0-6,2.687-6,6c0,3.314,2.687,6,6,6s6-2.686,6-6
+			C103.445,83.366,100.759,80.68,97.445,80.68z M97.445,90.911c-2.337,0-4.231-1.894-4.231-4.231c0-2.337,1.895-4.231,4.231-4.231
+			s4.231,1.895,4.231,4.231C101.677,89.018,99.782,90.911,97.445,90.911z"/>
+		<line class="crosshair1" x1="92.112" y1="86.68" x2="102.779" y2="86.68"/>
+		<line class="crosshair1" x1="97.445" y1="81.347" x2="97.445" y2="92.013"/>
 	</g>
 </g>
 </svg>
